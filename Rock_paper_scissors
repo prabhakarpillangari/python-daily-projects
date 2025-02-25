@@ -1,0 +1,22 @@
+import random
+
+prabha=int(input("what do you want to choose? Type 0 for Rock, 1 for Paper, 2 for Scissors. \n"))
+print(prabha)
+gowtham= random.randint(0,2)
+print(gowtham)
+if prabha>3 or prabha <0:
+    print('you typed invalid number. You loose')
+elif prabha ==0 and gowtham ==2:
+    print("you win!")
+elif gowtham==0 and prabha ==2:
+    print("you loos!")
+elif prabha == gowtham:
+    print("It's a draw")
+elif prabha> gowtham:
+    print("you win")
+elif  gowtham>prabha:
+    print("you loos!")
+elif prabha>3 and prabha <0:
+    print('you typed invalid number. You loose')
+
+
